@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="chat.css">
+    <title>Connect Page</title>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div class="title">
+                <img src="counterbalance.png" alt="counterbalance logo">
+                <h4>counterbalance</h4>
+            </div>
+
+            <ul class="navlinks">
+                <li><a href="home.html" class="home">home</a></li>
+                <li><a href="connect.html"  class="connect">Connect</a></li>
+                <li><a href="chat.html" id="active" class="chat">chat</a></li>
+                <li><a href="profile.html" class="profile">profile</a></li>
+                <a href="landing.html"><button id="logOut">Log Out</button></a>
+            </ul>     
+        </div>
+    </header>
+    
+    <div class="friend-request">
+        <div class="study-box">
+            <h2>Study Buddy Request:</h2>
+            <div class="request">
+                <div class="user-img"></div>
+                <div class="chat-username">swagswag543</div>
+                <div class="friend-button">
+                    <button class="accept">Accept</button>
+                    <button class="deny">Deny</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        window.addEventListener('scroll', function () {
+        let header = document.querySelector('header');
+        let windowPosition = window.scrollY > 0;
+        header.classList.toggle('scrolling-active', windowPosition);
+    })
+</script>
+</body>
+</html>

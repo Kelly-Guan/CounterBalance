@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div class="title">
+                <img src="counterbalance.png" alt="counterbalance logo">
+                <h4>counterbalance</h4>
+            </div>
+
+            <ul class="navlinks">
+                <li><a href="home.html" id="active" class="home">home</a></li>
+                <li><a href="connect.html" class="connect">Connect</a></li>
+                <li><a href="chat.html" class="chat">chat</a></li>
+                <li><a href="profile.html" class="profile">profile</a></li>
+                <a href="landing.html"><button id="logOut">Log Out</button></a>
+            </ul>     
+        </div>
+    </header>
+
+    <div class="aboutUs">
+        <div class="mission">
+            <h1>Find the strength to your weakness</h1>
+            <h3>The best study buddy is one who compliments your skills.</h3>
+            <a href="connect.html" ><button id="kelly">Connect Now</button></a>
+        </div>
+        <div class="annoying">
+            <img src="purple board (1).png" alt="picture" id="board">
+        </div>
+    </div>
+
+    <div class="funtions">
+        <div class="swagskill">
+            <img src="orange teacher.png" alt="teacher" id="pic">
+            <h3>Share efficent study techniques</h3>
+        </div>
+        <br>
+        <div class="swagskill">
+             <h3>Improve your productivity</h3>
+             <img src="orange pi.png" alt="pi" id="pic">
+         </div>
+         <br>
+         <div class="swagskill">
+             <img src="orange analysis.png" alt="analysis" id="pic">
+             <h3>Add a social element to your study routine</h3>
+         </div>
+ </div>
+
+         <!--footer-->
+         <footer>
+            <table class="center">    
+                <tr>
+                   <th>Counterbalance</th>
+                   <th>Company</th>
+                   <th>Resources</th>
+                   <th>Contact Us</th>
+                </tr>
+                <tr>
+                   <td>Copyright © 2020 Counterbalance</td>
+                   <td>Home</td>
+                   <td>Math</td>
+                   <td>Reach out to us at <b>counterbalance@gmail.com</b> for any inquiries or feedback!</td>
+                </tr>
+                <tr>
+                   <td>All rights reserved</td>
+                   <td>Profile</td>
+                   <td>English</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Find</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Connect</td>
+                    <td>Social Studies</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>French</td>
+                </tr>
+         </table>
+         <div class="footer-bottom">
+            <p>copyright &copy;2020 code0pacicity. designed by Kelly Guan, Maria Petersen, Isabelle Gan and built by Kelly Guan</p>
+        </div>
+    </footer>
+    
+    <script>
+        window.addEventListener('scroll', function () {
+           let header = document.querySelector('header');
+           let windowPosition = window.scrollY > 0;
+           header.classList.toggle('scrolling-active', windowPosition);
+       })
+
+   </script>
+
+</body>
+</html>

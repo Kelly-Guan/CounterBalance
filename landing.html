@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="landing.css">
+    <title>landing page</title>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div class="title">
+                <img src="counterbalance.png" alt="counterbalance logo">
+                <h4>counterbalance</h4>
+            </div>
+                <a href="#" id="signup"><button onclick="signup()">Sign up</button></a>
+                <a href="#" id="login"><button onclick="login()">Log in</button></a>   
+        </div>
+        </header>
+
+        <div class="about us">
+            <div class="mission">
+                <h1>Find the strength to your weakness</h1>
+                <h3>The best study buddy is one who compliments your skills.</h3>
+                <a onclick="signup()" id="kelly"><button >Get Started</button></a>
+            </div>
+            <div class="annoying">
+                <img src="board.png" alt="picture" id="board">
+            </div>
+        </div>
+
+        <div class="funtions">
+               <div class="swagskill">
+                   <img src="teacher.png" alt="teacher" id="pic">
+                   <h3>Share efficent study techniques</h3>
+               </div>
+               <br>
+               <div class="swagskill">
+                    <h3>Improve your productivity</h3>
+                    <img src="pi.png" alt="pi" id="pic">
+                </div>
+                <br>
+                <div class="swagskill">
+                    <img src="analysis.png" alt="analysis" id="pic">
+                    <h3>Add a social element to your study routine</h3>
+                </div>
+        </div>
+
+        <!-- sign up-->
+        <div id="signup-page" class="signup-modal">
+            <div class="signup-content">                
+                <div id="close-sign" class="close">+</div>
+                <h2>Sign Up</h2>
+                <form action="">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder=" Confirm Password">
+                    <a href="home.html"><button id="signup-but"class="getstarted" type="button">Sign up</button></a>
+                    <a id="have-an-account" onclick="login()">Have an account?</a>
+                </form>
+            </div>
+        </div>
+
+        <!-- Log In-->
+        <div id="login"class="login-modal">
+            <div class="login-content">                
+                <div id="close-log" class="close">+</div>
+                <h2>Login</h2>
+                <form action="">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href="home.html"><button id="login-but" class="getstarted" type="button">Log In</button></a>
+                    <a id="have-an-account" onclick="signup()">Don't have an account?</a>
+                </form>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <table class="center">    
+                <tr>
+                   <th>Counterbalance</th>
+                   <th>Company</th>
+                   <th>Resources</th>
+                   <th>Contact Us</th>
+                </tr>
+                <tr>
+                   <td>Copyright © 2020 Counterbalance</td>
+                   <td>Home</td>
+                   <td>Math</td>
+                   <td>Reach out to us at <b>counterbalance@gmail.com</b> for any inquiries or feedback!</td>
+                </tr>
+                <tr>
+                   <td>All rights reserved</td>
+                   <td>Profile</td>
+                   <td>English</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Find</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Connect</td>
+                    <td>Social Studies</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>French</td>
+                </tr>
+         </table>
+         <div class="footer-bottom">
+            <p>copyright &copy;2020 code0pacicity. designed by Kelly Guan, Maria Petersen, Isabelle Gan and built by Kelly Guan</p>
+        </div>
+    </footer>
+
+
+        
+
+    <script>
+        window.addEventListener('scroll', function () {
+           let header = document.querySelector('header');
+           let windowPosition = window.scrollY > 0;
+           header.classList.toggle('scrolling-active', windowPosition);
+       })
+
+       //login in 
+       document.getElementById('close-log').addEventListener('click', function(){
+        document.querySelector('.login-modal').style.display = 'none';
+       })
+
+       function login(){
+           document.querySelector('.login-modal').style.display = 'flex';
+       }
+
+        //signup
+       document.getElementById('close-sign').addEventListener('click', function(){
+        document.querySelector('.signup-modal').style.display = 'none';
+       })
+
+       function signup(){
+           document.querySelector('.signup-modal').style.display = 'flex';
+       }
+
+   </script>
+
+</body>
+</html>

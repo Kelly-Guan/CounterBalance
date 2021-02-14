@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*scroll bar swag*/
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color:var(--purple);
+}
+
+header, li, a, button{
+    font-weight: 550;
+    font-size: 16px;
+    color: var(--orange);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.topnav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.title{
+    margin-right: auto;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+.title h4{
+    font-weight: bold;
+    margin-left: 10px;
+    letter-spacing: 5px;
+}
+
+img{
+    cursor: pointer;
+    width: 50px;
+}
+
+#active{
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.navlinks{
+    position: relative;
+    right: 0;
+    justify-content: flex-end;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: var(--black);
+}
+
+#logOut{
+    margin-left: 40px;
+    padding: 8px 20px;
+    background-color: var(--purple);
+    color: var(--offwhite);
+    border: none;
+    border-radius:8px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+#logOut:hover{
+    padding: 8px 20px;
+    background-color: var(--offwhite);
+    color: var(--purple);
+}
+
+.scrolling-active .topnav{
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 1px 1rem rgba(0,0,0,.1);
+}
+
+
+.star{
+    font-size: 40px;
+}
+
+.checked{
+    color: var(--orange);
+}
+
+.profile h1{
+    position: absolute;
+    text-align: left;
+    margin: 0;
+    top: 16%;
+    left: 15%;
+    z-index: -4;
+}
+
+.profile-img{
+    position: absolute;
+    width: 25%;
+    height: 35%;
+    background-color: green;
+    top: 25%;
+    left: 25%;
+    z-index: -4;
+}
+
+.profile-info{
+    position: absolute;
+    text-align: left;
+    margin: 0;
+    top: 25%;
+    left: 58%;
+    z-index: -4;
+}
+
+.username{
+    font-size: 36px;
+}
+
+.profile-content div{
+    font-size: 20px;
+    padding: 8px 0;
+}
+
+.edit{
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: var(--purple);
+    color: var(--offwhite);
+    border: none;
+    border-radius:8px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    z-index: -4;
+}
+
+.edit:hover{
+    background-color: #ed8529;
+    color:#FDFDFD;
+}
+
+.course-strength{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    display: flex;
+    z-index: -4;
+}
+
+.course-strength h3{
+    color: var(--purple);
+}
+
+#courses{
+    margin-left: 10px;
+}
+
+#courses option{
+    color: var(--orange);
+    background-color: black;
+}
+
+.course-weakness{
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    display: flex;
+    z-index: -4;
+}
+
+.course-weakness h3{
+    color: var(--orange);
+}
+
+
+.brief-description{
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -4;
+}
+
+.box-brief{
+    width: 85%;
+    height: 125px;
+    background-color: var(--orange);
+    border-radius: 12px;
+}
+
+.brief-text{
+    color: var(--offwhite);
+    text-align: left;
+    margin-left: 100px;
+}
+
+.brief-text h3{
+    font-size: 20px;
+}
+
+.brief-text h6{
+    font-weight: lighter;
+    margin-top: 5px;
+    font-size: 15px;
+    max-width: 70%;
+}
+
+.edit-bio{
+    position: relative;
+    padding: 8px 20px;
+    background-color: var(--offwhite);
+    color: var(--orange);
+    border: none;
+    border-radius:8px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin-left: 85%;
+    top: 50px;
+}
+
+.edit-bio:hover{
+    background-color: var(--purple);
+    color:#FDFDFD;
+}
+
+/*footer content*/ 
+footer {
+    position: relative;
+    top:1100px;
+    width: 100%;
+    border: black;
+}
+table, th, td {
+   border: 1px solid transparent;
+   border-collapse: collapse;
+}
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+th {
+    text-align: left;
+}
+.footer-bottom{
+    position: relative;
+    text-align: center;
+    background-color: #353232;
+    color: var(--offwhite);
+}
+
+
+
+
+:root{
+    --purple: #8631dd;
+    --orange: #ed8529;
+    --black: #1d1c1c;
+    --offwhite: #FDFDFD;
+
+}

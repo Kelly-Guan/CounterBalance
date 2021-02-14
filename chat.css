@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*scroll bar swag*/
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color:var(--purple);
+}
+
+header, li, a, button{
+    font-weight: 550;
+    font-size: 16px;
+    color: var(--orange);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.topnav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.title{
+    margin-right: auto;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+.title h4{
+    font-weight: bold;
+    margin-left: 10px;
+    letter-spacing: 5px;
+}
+
+img{
+    cursor: pointer;
+    width: 50px;
+}
+
+#active{
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.navlinks{
+    position: relative;
+    right: 0;
+    justify-content: flex-end;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: var(--black);
+}
+
+#logOut{
+    margin-left: 40px;
+    padding: 8px 20px;
+    background-color: var(--purple);
+    color: var(--offwhite);
+    border: none;
+    border-radius:8px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+#logOut:hover{
+    padding: 8px 20px;
+    background-color: var(--offwhite);
+    color: var(--purple);
+}
+
+.scrolling-active .topnav{
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 1px 1rem rgba(0,0,0,.1);
+}
+
+.comingsoon{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    font-size: 30px;
+}
+
+.friend-request{
+    position: absolute;
+    width: 100%;
+    background-color: #8631dd;
+    display: flex;
+    height: 150px;
+    top: 15%;
+}
+
+.study-box h2{
+    position: relative;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 25px;
+    color: var(--offwhite);
+}
+
+.request{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friend-button{
+    position: relative;
+    margin: 10px;
+    right: 0;
+    justify-content: flex-end;
+}
+
+.friend-button button{
+    padding: 8px 20px;
+    border: none;
+    border-radius:8px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    top: 20px;
+}
+
+.accept{
+    background-color: var(--offwhite);
+    color: var(--purple);
+}
+
+.accept:hover{
+    background-color: var(--orange);
+    color: var(--offwhite);
+}
+
+.deny{
+    background-color: var(--offwhite);
+    color: var(--orange);
+}
+
+.deny:hover{
+    background-color: #ed8529;
+    color: var(--offwhite);
+}
+
+
+
+
+:root{
+    --purple: #8631dd;
+    --orange: #ed8529;
+    --black: #1d1c1c;
+    --offwhite: #FDFDFD;
+
+}

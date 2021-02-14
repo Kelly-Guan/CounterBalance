@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*scroll bar swag*/
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color:var(--purple);
+}
+
+header, li, a, button{
+    font-weight: 550;
+    font-size: 16px;
+    color: var(--orange);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.topnav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.title{
+    margin-right: auto;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+.title h4{
+    font-weight: bold;
+    margin-left: 10px;
+    letter-spacing: 5px;
+}
+
+img{
+    cursor: pointer;
+    width: 50px;
+}
+
+#active{
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.navlinks{
+    position: relative;
+    right: 0;
+    justify-content: flex-end;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: var(--black);
+}
+
+#logOut{
+    margin-left: 40px;
+    padding: 8px 20px;
+    background-color: var(--purple);
+    color: var(--offwhite);
+    border: none;
+    border-radius:8px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+#logOut:hover{
+    padding: 8px 20px;
+    background-color: var(--offwhite);
+    color: var(--purple);
+}
+
+
+
+.scrolling-active .topnav{
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 1px 1rem rgba(0,0,0,.1);
+}
+
+.mission{
+    position: absolute;
+    text-align: left;
+    margin: 0;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+.mission h1{
+    font-size: 8vh;
+    max-width: 600px;
+    max-height: 300px;
+    color: var(--purple);
+}
+
+.mission h3{
+    position: relative;
+    margin-top: 3px;
+    font-size:2.5vh;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+#kelly{
+    position: relative;
+    border: none;
+    height: 40px;
+    width: 130px;
+    margin-top: 20px;
+    margin-left: 0;
+    border-radius:8px; 
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    background-color: var(--purple);
+    color: white;
+    cursor: pointer;
+}
+
+#kelly:hover{
+    background-color: var(--offwhite);
+    color:var(--purple);
+}
+
+.annoying{
+    position: absolute;
+    right: 0;
+    justify-content: flex-end;
+    z-index: -1;
+}
+
+#board{
+    position: relative;
+    width: 900px;
+    margin-top: 10%;
+}
+
+.funtions{
+    position: absolute;
+    width: 100%;
+    top: 110%;
+    z-index: -4;
+}
+
+.swagskill{
+    position: relative;
+    min-width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.swagskill h3{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+#pic{
+    margin-left: 0;
+    width: 530px;
+}
+
+/*footer content*/ 
+footer {
+    position: relative;
+    top:2350px;
+    width: 100%;
+    border: black;
+}
+table, th, td {
+   border: 1px solid transparent;
+   border-collapse: collapse;
+}
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+th {
+    text-align: left;
+}
+.footer-bottom{
+    position: relative;
+    text-align: center;
+    background-color: #353232;
+    color: var(--offwhite);
+}
+
+:root{
+    --purple: #8631dd;
+    --orange: #ed8529;
+    --black: #1d1c1c;
+    --offwhite: #FDFDFD;
+
+}
